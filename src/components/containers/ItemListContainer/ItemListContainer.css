@@ -1,0 +1,225 @@
+.containerItem {
+    margin: 50px;
+    color: black;
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #A0522D;
+    background-color: #cacaca52;
+    /* text-decoration: none;
+    border: 2px black solid;
+    -webkit-box-shadow: 9.5px 9px 14px -0.5px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 9.5px 9px 14px -0.5px rgba(0, 0, 0, 0.39);
+    box-shadow: 9.5px 9px 14px -0.5px rgba(0, 0, 0, 0.39); */
+}
+
+.containerItem:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #FFE4B5;
+    /* Moccasin */
+}
+
+a {
+    text-decoration: none;
+}
+
+.greeting {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8B2500;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.picturesItems {
+    height: 150px;
+    width: 90px;
+    object-fit: scale-down;
+
+}
+
+
+
+
+.ItemDetailBox {
+    color: black;
+    height: 500px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: black;
+    border: 2px solid #a0512d3f;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px rgba(0, 0, 0, 0.404) solid;
+    border-radius: 10px;
+    background-color: #8d99ae54; */
+
+}
+
+.ItemDetailBoxText {
+    color: black;
+}
+
+.titleText {
+    background-color: #a0512d52;
+    border: #A0522D 2px solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.priceText {
+    margin-right: 10px;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.position1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 1fr;
+}
+
+.postion2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.counterBtn {
+    margin: 10px;
+    background-color: #c03c0cb9;
+    color: #F5F5DC;
+    padding: 10px;
+    border: 2px solid #A0522D;
+    border-radius: 20px;
+    font-size: 18px;
+    /* text-transform: uppercase; */
+}
+
+.counterBtn:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #FFE4B5;
+    color: #8B2500;
+}
+
+.picturesDetailItems {
+    height: 300px;
+    width: 200px;
+    object-fit: scale-down;
+
+}
+
+.orderStatus {
+    text-align: center;
+    color: #F5F5DC;
+    background-color: #c03c0cb9;
+    border-radius: 20px;
+    margin: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+
+.productImgs {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+.productsStyle{
+    padding: 10px;
+}
+
+.productsDeleteBtn{
+    color: #F5F5DC;
+    font-size: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #c03c0cb9;
+    border: 2px solid #A0522D;
+    border-radius: 10px;
+}
+
+.productsDeleteBtn:hover{
+    transition: background-color 0.3s ease-in-out;
+    background-color: #FFE4B5;
+    color: #8B2500;
+}
+
+.productsListStyle{
+    list-style: none;
+}
+
+.placement {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.titleInfo {
+    margin: 20px;
+    text-align: center;
+    color: #A0522D;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.inputStyle {
+    margin: 10px;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #FFE4B5;
+    border: 5px solid #a0512d86;
+    border-radius: 10px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.inputStyle:disabled{
+    border: 5px solid #a0512d42;
+    background-color: #ffe4b5;
+}
+
+.createOrderBtn{
+    margin: 10px;
+    background-color: #c03c0cb9;
+    color: #F5F5DC;
+    padding: 10px;
+    border: 2px solid #A0522D;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.createOrderBtn:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #FFE4B5;
+    color: #8B2500;
+}
+
+.createOrderBtn:disabled{
+    margin: 10px;
+    background-color: #c03c0c5d;
+    color: #F5F5DC;
+    padding: 10px;
+    border: 2px solid #A0522D;
+    border-radius: 20px;
+    font-size: 18px;
+}
