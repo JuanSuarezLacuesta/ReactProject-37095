@@ -17,7 +17,7 @@ The whole idea of "movieGate" is to sell snacks for the movies that you are goin
 - React Dom and Router for easy exploring of the app
 
 ## Links
-- 
+- https://deft-rabanadas-7057e9.netlify.app
 
 
 ## LAST WORDS:
