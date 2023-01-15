@@ -3,14 +3,14 @@ import Item from "../Item/Item"
 
 
 const ItemList = memo(
-  ({products }) => {
-  
+  ({ products }) => {
+
     return (
       <div>
-        {products.map(product => <Item product= {product}/>)}
+        {products.map(product => <Item product={product} />)}
       </div>
-      )
+    )
   }
-)  
+)
 
 export default ItemList

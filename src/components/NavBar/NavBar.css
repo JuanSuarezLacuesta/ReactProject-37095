@@ -1,43 +1,24 @@
-.NavBackground{
-    /* background-color: #1e1f2e; */
+.NavBackground {
     background-color: #804529;
     display: flex;
     justify-content: space-around;
     text-decoration: none;
 }
 
-.NavText{
+.NavText {
     color: rgba(255, 255, 255, 0.842);
     text-decoration: none;
 }
-.NavText:hover{
+
+.NavText:hover {
     transition: color 0.1s ease-in-out;
     color: white;
 }
 
-.navSpace{
+.navSpace {
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-/* inside de collapse info */
-/* .navbar-collapse {
-    color: white;
-    background-color: white;
-} */
-/* .collapse{
-    color: white;
-    background-color: white;
-} */

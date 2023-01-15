@@ -1,8 +1,4 @@
-import { useEffect } from 'react'
 import { useState } from 'react'
-
-import gFetch from '../../helpers/gFetch'
-
 
 function Counter({ end = 5, initial = 1, onAdd }) {
 

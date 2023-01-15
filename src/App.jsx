@@ -1,25 +1,24 @@
-import { useState } from 'react'
-
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/containers/ItemListContainer/ItemListContainer';
-import Counter from './components/Counter/Counter';
 import ItemDetailContainer from './components/containers/ItemDetailContainer/ItemDetailContainer';
+import { CartContextProvider } from './context/CartContext';
+import Footer from './components/Footer/Footer';
+import CartContainer from './components/containers/CartContainer/CartContainer';
 
 //-----bootstrap-----//
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import CartContainer from './components/containers/CartContainer/CartContainer';
-import CartWidget from './components/CartWidget/CartWidget';
 
 import './App.css'
-import { CartContextProvider } from './context/CartContext';
 
 
 function App() {
   let saludo = 'WHATEVER YOU NEED FOR THE MOVIES BEGINS HERE'
   return (
-    <CartContextProvider>
+    <main className='app'>
+      <section className='mainContent'>
+      <CartContextProvider>
       <BrowserRouter>
       <NavBar/>
 
@@ -32,9 +31,11 @@ function App() {
         <Route path='*' element={<Navigate to='/'/> }/>
 
       </Routes>
-  
     </BrowserRouter>
     </CartContextProvider>
+      </section>
+    <Footer/>
+    </main>
   )
 }
 

@@ -8,17 +8,11 @@
     margin-bottom: 20px;
     border: 2px solid #A0522D;
     background-color: #cacaca52;
-    /* text-decoration: none;
-    border: 2px black solid;
-    -webkit-box-shadow: 9.5px 9px 14px -0.5px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 9.5px 9px 14px -0.5px rgba(0, 0, 0, 0.39);
-    box-shadow: 9.5px 9px 14px -0.5px rgba(0, 0, 0, 0.39); */
 }
 
 .containerItem:hover {
     transition: background-color 0.3s ease-in-out;
     background-color: #FFE4B5;
-    /* Moccasin */
 }
 
 a {
@@ -41,9 +35,6 @@ a {
 
 }
 
-
-
-
 .ItemDetailBox {
     color: black;
     height: 500px;
@@ -53,15 +44,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: black;
-    border: 2px solid #a0512d3f;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px rgba(0, 0, 0, 0.404) solid;
-    border-radius: 10px;
-    background-color: #8d99ae54; */
-
 }
 
 .ItemDetailBoxText {
@@ -107,7 +89,6 @@ a {
     border: 2px solid #A0522D;
     border-radius: 20px;
     font-size: 18px;
-    /* text-transform: uppercase; */
 }
 
 .counterBtn:hover {
@@ -120,7 +101,6 @@ a {
     height: 300px;
     width: 200px;
     object-fit: scale-down;
-
 }
 
 .orderStatus {
@@ -131,22 +111,17 @@ a {
     margin: 100px;
 }
 
-.red {
-    background-color: red;
-}
-
-
 .productImgs {
     height: 70px;
     width: 70px;
     object-fit: contain;
 }
 
-.productsStyle{
+.productsStyle {
     padding: 10px;
 }
 
-.productsDeleteBtn{
+.productsDeleteBtn {
     color: #F5F5DC;
     font-size: 10px;
     margin: 10px;
@@ -156,13 +131,13 @@ a {
     border-radius: 10px;
 }
 
-.productsDeleteBtn:hover{
+.productsDeleteBtn:hover {
     transition: background-color 0.3s ease-in-out;
     background-color: #FFE4B5;
     color: #8B2500;
 }
 
-.productsListStyle{
+.productsListStyle {
     list-style: none;
 }
 
@@ -193,12 +168,13 @@ a {
     border-radius: 10px;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-.inputStyle:disabled{
+
+.inputStyle:disabled {
     border: 5px solid #a0512d42;
     background-color: #ffe4b5;
 }
 
-.createOrderBtn{
+.createOrderBtn {
     margin: 10px;
     background-color: #c03c0cb9;
     color: #F5F5DC;
@@ -214,7 +190,7 @@ a {
     color: #8B2500;
 }
 
-.createOrderBtn:disabled{
+.createOrderBtn:disabled {
     margin: 10px;
     background-color: #c03c0c5d;
     color: #F5F5DC;
@@ -222,4 +198,10 @@ a {
     border: 2px solid #A0522D;
     border-radius: 20px;
     font-size: 18px;
+}
+
+.orderIdText {
+    text-align: center;
+    color: #A0522D;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }

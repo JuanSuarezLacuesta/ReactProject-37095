@@ -1,22 +1,20 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { collection, getDocs, getFirestore, orderBy, query, where } from 'firebase/firestore'
 
-import gFetch from "../../../helpers/gFetch";
 import ItemList from "../../ItemList/ItemList";
-// import 'firebase/compat/auth'; 
-// import 'firebase/compat/firestore';
-import { collection, doc, getDocs, getFirestore, limit, orderBy, query, where } from 'firebase/firestore'
-import "./ItemListContainer.css"
 import Loading from "../../Loading/Loading";
 
-function ItemListContainer({ greeting }) {
+import "./ItemListContainer.css"
 
+function ItemListContainer({ greeting }) {
 
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const { categoryId } = useParams()
 
+  // --- information from firebase db --- //
+  
   useEffect(() => {
 
     const db = getFirestore()
@@ -29,7 +27,6 @@ function ItemListContainer({ greeting }) {
         .then(response => setProducts(response.docs.map(products => ({ id: products.id, ...products.data() }))))
         .catch((err) => console.log(err))
         .finally(() => setLoading(false))
-      console.log(categoryId)
 
     } else {
 
@@ -47,11 +44,13 @@ function ItemListContainer({ greeting }) {
   return (
     <section>
       <div className="greeting">{greeting}</div>
+
       <div className="position1">
-        {loading ? 
-        <Loading/> :
-        <ItemList products={products} />}
-        </div>
+        {loading ?
+          <Loading /> :
+          <ItemList products={products} />}
+      </div>
+
     </section>
 
 

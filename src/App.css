@@ -1,6 +1,14 @@
 #root {
   background-color: #F5F5DC;
   font-family: 'DM Sans', sans-serif;
-  height: 100vh;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  flex: 1;
+}
